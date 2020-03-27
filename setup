@@ -1,0 +1,30 @@
+#!/usr/bin/env python3
+import os
+from os.path import expanduser
+import sys
+
+
+bash_profile = expanduser("~/.bashrc")
+simbotic_sandbox_directory = os.getcwd()
+simbotic_engine = sys.argv[1]
+
+print("SIMBOTIC_SANDBOX: {}".format(simbotic_sandbox_directory))
+print("SIMBOTIC_ENGINE: {}".format(simbotic_engine))
+
+export_simbotic_engine = "export SIMBOTIC_ENGINE={}".format(simbotic_engine)
+export_simbotic_sandbox = "export SIMBOTIC_SANDBOX={}".format(simbotic_sandbox_directory)
+
+def write_string(string, bash_file):
+    with open(bash_file, "r") as file:
+        contents = file.read()
+        if string not in contents:
+            with open(bash_file, "a") as file:
+                file.write("\n{}\n".format(string))
+                print("write for: {}".format(string))
+
+print("Exporting Unreal path...")
+write_string(export_simbotic_engine, bash_profile)
+print("Export Sandbox Path...")
+write_string(export_simbotic_sandbox, bash_profile)
+
+print("Done! Please execute source ~/.bashrc to load new configuration")

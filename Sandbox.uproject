@@ -1,0 +1,34 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{00040468-08D6-DD07-8FA0-29BA7177E2F7}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "Sandbox",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "GStreamerLoader",
+			"Enabled": true
+		},
+		{
+			"Name": "GStreamer",
+			"Enabled": true
+		},
+		{
+			"Name": "DynamicalSystems",
+			"Enabled": true
+		},
+		{
+			"Name": "Synthetic",
+			"Enabled": true
+		}
+	]
+}
