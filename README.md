@@ -1,4 +1,4 @@
-# Synthetic
+# Sandbox
 Generating synthetic data, using PASCAL VOC and YOLO annotation formats
 
 <p align="center"> 
@@ -22,26 +22,26 @@ make
 
 For more info vist [Building on Linux](https://wiki.unrealengine.com/Building_On_Linux).
 
-## Setup Synthetic (this repo)
+## Setup Sandbox (this repo)
 
 Clone repository:
 
 ```
-git clone git@github.com:VertexStudio/Synthetic.git
+git clone git@github.com:Simbotic/Sandbox.git
 ```
 
 Environment variables:
 
 Execute `setup /path/to/SimboticEngine` script to include the following inside your `.bashrc` file:
 ```
-export UE4_ROOT=/path/to/SimboticEngine
-export UE4_SYNTHETIC=/path/to/Synthetic
+export SIMBOTIC_ENGINE=/path/to/SimboticEngine
+export SIMBOTIC_SANDBOX=/path/to/Sandbox
 ```
 
 Generate project files and build
 
 ```
-cd $UE4_SYNTHETIC
+cd $SIMBOTIC_SANDBOX
 git lfs pull
 ./generate.sh
 ./build.sh
@@ -50,5 +50,5 @@ git lfs pull
 Run:
 
 ```
-./run_editor.sh
+./editor.sh
 ```
