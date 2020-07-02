@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "{00040468-08D6-DD07-8FA0-29BA7177E2F7}",
+	"EngineAssociation": "{00038164-2B05-1018-001C-0295B8A214DD}",
 	"Category": "",
 	"Description": "",
 	"Modules": [
@@ -29,6 +29,11 @@
 		{
 			"Name": "Synthetic",
 			"Enabled": true
+		},
+		{
+			"Name": "DragonIKPlugin",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/3f3985e9eb40414aaabf645791fa4916"
 		}
 	]
 }

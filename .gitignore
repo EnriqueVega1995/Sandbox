@@ -77,8 +77,6 @@ DerivedDataCache/*
 # Default directory to save synthetic_data
 synthetic_data
 
-/Content/Environments
-
 /.vscode
 /*.code-workspace
 /Makefile
@@ -92,3 +90,9 @@ Sandbox.kdev4
 Sandbox.workspace
 SandboxCodeCompletionFolders.txt
 SandboxCodeLitePreProcessor.txt
+
+# Content
+/Content/
+!/Content/Robots
+!/Content/Segmentation
+!/Content/Synthetic
